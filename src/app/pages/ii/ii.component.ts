@@ -63,7 +63,6 @@ export class IIComponent {
     this.isLoading2 = true;
     const res = await this.apiService.getDetailInfo(this.fetchingData[i]);
     this.imageInfo = res;
-    this.console(this.imageInfo)
     this.isLoading2 = false;
   }
   objectKeys(obj: any): string[] {
